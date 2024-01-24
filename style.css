@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  background-image: url(https://order.shilafood.net/2.13.12/img/c7979ce2a99cc2fbd5c72a7fd1d2f82b.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-family: Vazir, Geneva, Tahoma, sans-serif;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+.navBar__logo {
+  width: 80px;
+  margin-right: 15px;
+  border: none;
+  padding-right: 5px;
+}
+.navBar__button {
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-family: inherit;
+  background-color: transparent;
+  color: rgb(227, 235, 241);
+  font-size: 15px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  outline: 0px;
+  line-height: 1;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  border-radius: 5px;
+  background: none;
+  border: 1px solid rgb(243, 112, 33);
+}
+.navBar__button:hover {
+  background-color: rgb(243, 112, 33);
+  transform: scale(0.9);
+  transition: all ease-in-out 0.4s;
+}
+.navBar__button__icon {
+  margin-left: 5px;
+  font-size: 10px;
+}
+.navBar__note {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .navBar__note {
+    display: inline-block;
+    width: 60px;
+    color: rgb(227, 235, 241);
+    font-size: 12px;
+  }
+  .navBar__logo {
+    border-right: 2px solid rgb(227, 235, 241);
+  }
+}
+.mainSection {
+  color: rgb(227, 235, 241);
+  width: 40%;
+  margin: auto;
+  background-color: rgba(27, 31, 31, 0.726);
+  padding: 50px 50px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+.mainSection__city {
+  font-size: 15px;
+}
+.mainSection__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  row-gap: 20px;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+}
+.mainSection__heading {
+  display: block;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .mainSection {
+    padding: 20px 30px;
+    width: 50%;
+  }
+  .mainSection__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    row-gap: 30px;
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+  }
+  .mainSection__heading {
+    font-size: 28px;
+  }
+  .mainSection__city {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .mainSection {
+    padding: 40px 70px;
+    width: 60%;
+  }
+  .mainSection__wrapper {
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    row-gap: 40px;
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+  }
+  .mainSection__heading {
+    font-size: 30px;
+  }
+  .mainSection__city {
+    font-size: 15px;
+  }
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(34, 30, 30);
+  height: 80px;
+  color: rgb(227, 235, 241);
+  padding: 0 40px;
+  bottom: 0;
+  position: relative;
+  bottom: 0;
+}
+.footer--highlited {
+  color: rgb(243, 112, 33);
+}
+.footer__note {
+  font-size: 15px;
+}
+.footer__icons {
+  font-size: 20px;
+  cursor: pointer;
+}
+.footer__icons:hover {
+  transform: scale(1.4);
+  transition: all ease-in-out 0.4s;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}/*# sourceMappingURL=style.css.map */
